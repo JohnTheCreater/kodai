@@ -17,7 +17,7 @@ app.get('*',(req,res)=>{
 
 
 
-app.post('/sendMail',async(req,res)=>{
+app.post('/api/sendMail',async(req,res)=>{
     const{item,form,date}=req.body;
 
     const sender=nodemailer.createTransport({
